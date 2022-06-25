@@ -3,7 +3,7 @@
 // Сделать первый символ заглавным
 
 const ucFirst = (str) => {
-  return (str) ? str[0].toUpperCase + str.slice(1, str.length) : str;
+  return (str) ? str[0].toUpperCase() + str.slice(1, str.length) : str;
 };
 
 // Проверка на спам
