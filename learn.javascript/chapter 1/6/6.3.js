@@ -3,8 +3,6 @@
 // Сумма с помощью замыканий
 
 const sum = (a) => {
-  let c = 0;
-
   return (b) => {
     return a + b;
   }
