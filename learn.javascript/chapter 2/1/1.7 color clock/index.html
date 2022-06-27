@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    .clock__time--hours {
+      color: red;
+    }
+
+    .clock__time--minutes {
+      color: green
+    }
+
+    .clock__time--seconds {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div>
+      <span class="clock__time clock__time--hours">hh</span>:
+      <span class="clock__time clock__time--minutes">mm</span>:
+      <span class="clock__time clock__time--seconds">ss</span>
+    </div>
+    <button onClick="startClock()">Start</button>
+    <button onClick="stopClock()">Stop</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
