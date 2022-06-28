@@ -1,0 +1,36 @@
+/* Выберите элементы селектором */
+
+input[type="selector"] {}
+
+input[type="selector"]:not(:checked) {}
+
+[id="message"],
+[id^="message-"] {}
+
+[id^="message-"] {}
+
+[href$=".zip"] {}
+
+[data-action~="delete"] {}
+
+[data-action]:not([data-action~="delete"]) {}
+
+#messages li:nth-child(2n) {}
+
+h3#widget-title + * {}
+
+h3#widget-title ~ a {}
+
+#messages li:last-child a {}
+
+/* Отступ между элементами, размер одна строка */
+
+li + li {
+  margin-top: 1.5em;
+}
+
+/* Отступ между парами, размером со строку */
+
+li:nth-child(2n):not(:last-child) {
+  margin-bottom: 1.5em;
+}
