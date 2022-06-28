@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none
+    }
+
+    .icon {
+      float: left;
+      cursor: pointer;
+    }
+
+    .text {
+      margin-bottom: 5px;
+    }
+  </style>>
+</head>
+<body>
+  <ul>
+    <li class="open">
+      <div class="icon">
+        <img src="https://js.cx/sprite-tree/minus.gif" width="16" height="16">
+      </div>
+      <div class="text">Раздел 1
+        <br>(занимает две строки)</div>
+      <ul>
+        <li class="closed">
+          <div class="icon">
+            <img src="https://js.cx/sprite-tree/plus.gif" width="16" height="16">
+          </div>
+          <div class="text">Раздел 1.1</div>
+        </li>
+        <li class="leaf">
+          <div class="icon">
+            <img src="https://js.cx/sprite-tree/article.gif" width="16" height="16">
+          </div>
+          <div class="text">Страница 1.2
+            <br>(занимает две строки)</div>
+        </li>
+      </ul>
+    </li>
+    <li class="closed">
+      <div class="icon">
+        <img src="https://js.cx/sprite-tree/plus.gif" width="16" height="16">
+      </div>
+      <div class="text">Раздел 2
+        <br>(занимает две строки)</div>
+    </li>
+  </ul>
+</body>
+</html>
