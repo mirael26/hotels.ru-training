@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .modal-wrapper {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    .modal-wrapper__color {
+      width: 100%;
+      height: 100%;
+      margin: 20px;
+      background-color: purple;
+      opacity: 0.2;
+      z-index: 1;
+    } 
+
+    .modal {
+      position: absolute;
+      top: calc(50% - 66px);
+      left: calc(50% - 150px);
+      width: 300px;
+      min-height: 132px;
+      padding: 5px 40px 5px 55px;
+      background: url(https://js.cx/clipart/key.png) 3px 5px no-repeat,
+       white;
+      border: 1px solid black;
+      z-index: 2;
+    }
+
+    .modal__title {
+      margin: 0 0 3px;
+    }
+
+    .modal__label {
+      display: flex;
+      justify-content: space-between;
+      width: 240px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+
+<body style="height:2000px">
+
+  <p>Текст Текст Текст</p>
+
+  <button onclick="alert('Эта кнопка не должна работать')">Эта кнопка не работает</button>
+
+  <p>Текст Текст Текст</p>
+
+
+  <div class="modal-wrapper">
+
+    <div class="modal">
+      <form>
+        <p class="modal__title">Добро пожаловать!</p>
+        <label class="modal__label">Логин
+          <input class="modal__input" type="text"/>
+        </label>
+        <label class="modal__label">Пароль
+          <input class="modal__input" type="password"/>
+        </label>
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+
+    <div class="modal-wrapper__color"></div>
+  </div>
+
+  
+
+</body>
+
+</html>
